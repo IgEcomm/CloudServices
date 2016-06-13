@@ -1,0 +1,7 @@
+---
+applications:
+- name: ige-config-server
+  host: ige-config-server-${random-word}
+  memory: 512M
+  instances: 1
+  path: target/ige-config-server-0.0.1-SNAPSHOT.jar

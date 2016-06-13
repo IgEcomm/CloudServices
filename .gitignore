@@ -13,4 +13,5 @@ ige-api-gateway/.project
 ige-config-server/.classpath
 ige-config-server/.project
 ige-api-gateway/.settings/
-ige-config-server/
+.project
+.settings/
