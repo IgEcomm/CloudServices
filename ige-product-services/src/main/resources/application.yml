@@ -1,0 +1,20 @@
+logging:
+  path: ./
+  file: products-log.log
+  level:
+    org.hibernate: DEBUG
+    org.springframework.web: ERROR
+
+server:
+  port: 8082
+
+endpoints:
+  beans:
+    sensitive: false
+  shutdown:
+    enabled: true
+
+spring:
+  data:
+    mongodb:
+      uri: ${vcap.services.${PREFIX:}mongodb.credentials.uri:mongodb://${MONGODB_HOST:localhost}:${MONGODB_PORT:27017}/productsApi}

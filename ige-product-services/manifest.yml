@@ -1,0 +1,14 @@
+---
+applications:
+- name: ige-product-services
+  host: ige-product-services-${random-word}
+  memory: 512M
+  instances: 1
+  timeout: 90
+  path: target/ige-product-services-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+    - ige-product-services-db
+    - ige-config-service
+    - ige-service-registry

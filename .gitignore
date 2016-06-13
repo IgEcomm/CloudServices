@@ -1,0 +1,16 @@
+ige-product-services/target/
+ige-eureka-server/target/
+ige-api-gateway/target/
+ige-config-server/target/
+ige-eureka-server/.classpath
+ige-eureka-server/.project
+ige-eureka-server/.settings/
+ige-product-services/.settings/
+ige-product-services/.classpath
+ige-product-services/.project
+ige-api-gateway/.classpath
+ige-api-gateway/.project
+ige-config-server/.classpath
+ige-config-server/.project
+ige-api-gateway/.settings/
+ige-config-server/

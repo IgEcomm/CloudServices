@@ -1,0 +1,13 @@
+---
+applications:
+- name: ige-api-gateway
+  host: ige-api-gateway-${random-word}
+  memory: 512M
+  instances: 1
+  timeout: 90
+  path: target/ige-api-gateway-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+    - ige-config-service
+    - ige-service-registry

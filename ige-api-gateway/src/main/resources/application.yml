@@ -1,0 +1,26 @@
+server:
+  port: 9000
+  context-path: /api
+
+client_key: igerestapp
+client_secret_key: igerestappsecret
+
+zuul:
+  routes:
+    ige-product-services: /productApi/**
+  
+security:
+  user:
+    password: password
+
+spring:
+  data:
+    mongodb:
+      uri: ${vcap.services.${PREFIX:}mongodb.credentials.uri:mongodb://${MONGODB_HOST:localhost}:${MONGODB_PORT:27017}/igeAuth}
+ 
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.cloud.netflix: INFO
+    com.netflix.zuul: INFO
+    com.ig.ecommsolution.api.gateway: DEBUG

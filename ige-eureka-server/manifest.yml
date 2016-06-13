@@ -1,0 +1,7 @@
+---
+applications:
+- name: ige-eureka-server
+  host: ige-eureka-server-${random-word}
+  memory: 512M
+  instances: 1
+  path: target/ige-eureka-server-0.0.1-SNAPSHOT.jar
