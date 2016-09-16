@@ -21,6 +21,9 @@
 		<module>ige-eureka-server</module>		
 		<module>ige-product-services</module>
 		<module>ige-api-gateway</module>
+		
+		
+		<module>ige-notification-services</module>
 	</modules>
 
 	<properties>
